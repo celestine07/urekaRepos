@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-device, initial-scale=1.0" >
+        <link rel="stylesheet" href="ureka.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'>
+        
+        
+              
+</head>
+<body>
+
+
+        <div class="maimcontainer">
+          <div class="header">
+              
+                <img src="IMG-20200828-WA0021.jpg" class="urekalogo"  alt="">
+                <h5> we wont watse your watse</h3>
+             </div> 
+             <div class="topnav" id="myTopnav">
+               <a href="#home" class="active">Ureka</a>
+               <a href="#products/s">Proucts/Services</a>
+               <a href="#news">Gallery</a>
+               <a href="#urekateam">Ureka Team</a>
+               <a href="#contact">Contact</a>
+               <a href="#about">About</a>
+               <a href="javascript:void(0);" class="icon" onclick="myFunctionNav()">
+                 <i class="fa fa-bars"></i>
+               </a>
+             </div>
+           <div class="maincontainer2">
+             <div class="col-3">
+               <div class="addspace1">
+                 <!--<p>drop adds here </br> A United States federal judge has approved a request from a group of WeChat users to delay looming US government restrictions that would effectively make the popular app nearly impossible to use in the country.
+
+                  Magistrate Judge Laurel Beeler said the government's actions would affect users' First Amendment rights as the effective ban on the app removes their platform for communication. 
+                  
+                  WeChat is a messaging focused app popular with many Chinese-speaking Americans that serves as a connector to friends, family, customers and</p>-->
+               </div>
+            </div>
+            <div class="col-6">   
+             <article>
+               <p>PRODUCTS AND SERVICES</p>
+                <p>SERVICES</P>
+                  <P>We offer services that cut across waste recycling, waste management and consultation services.</p>
+               <p>PROTDUCTS</p>
+               <p>Our products are basically made of recycled waste materials. They are durable and highly affordable. At Ureka we conform to safety precautions to deliver cutting edge products that can compete with conventional products.</br>Our products include Polyketide paving stones and interlocks, polyketide flooring titles, poliketide interlocks, polyester yarns among many others.</br>Our polyketide paving stones and interlocks are algae proof, water resistant and acid repellent.</p>
+               <p>
+                Objectives</br> 
+                • To assist in the efforts to achieve cleanliness of the State </br>
+                • Encourage residents to imbibe the culture of hygiene </br>
+                • Reduce the incident of indiscriminate dumping and generating zero waste </br>
+                • Allow for easy end of plastic waste in our communities.
+               </p>
+             </article> 
+
+             
+               <!-- The four image columns -->
+             <div class="rowimg">
+               <p>click to view image</p>
+               <div class="column">
+                 <img src="20200831_130410.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="20200831_125013.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+               </div>
+               <div  class="column">
+                 <img src="20200831_125045.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="20200801_174412.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+               </div>
+
+             </div>
+
+             <div class="container">
+               <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+               <img id="expandedImg" style="width:100%">
+               <div id="imgtext"></div>
+             </div>
+   
+              <script>
+              function myFunctionNav() {
+               var x = document.getElementById("myTopnav");
+               if (x.className === "topnav") {
+                 x.className += " responsive";
+               } else {
+                 x.className = "topnav";
+               }         
+
+              
+             }   
+            
+             function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                 expandImg.src = imgs.src;
+                  imgText.innerHTML = imgs.alt;
+                  expandImg.parentElement.style.display = "block";
+                          }
+             </script>
+        
+    
+
+            </div>
+            <div class="col-3">
+              <div class="addspace2">
+               <!-- <p>drop adds here
+                  A United States federal judge has approved a request from a group of WeChat users to delay looming US government restrictions that would effectively make the popular app nearly impossible to use in the country.
+
+Magistrate Judge Laurel Beeler said the government's actions would affect users' </br>First Amendment rights as the effective ban on the app removes their platform for communication. 
+
+WeChat is a messaging focused app popular with many Chinese-speaking Americans that serves as a connector to friends, family, customers and
+                </p>-->
+
+              </div>
+             </div>
+          </div>    
+                
+         </div>
+          <footer>
+                  <p>About us</p>
+                  <p>contacts</p>
+                  <P>copy right</P>
+                </footer>
+    </body>
+</html>
+
