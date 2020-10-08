@@ -1,7 +1,7 @@
 * {box-sizing: border-box}
 body {/*font-family: Verdana, sans-serif; margin:0;*/
 
-font-family: 'Pontano Sans';font-size: 22px; 
+font-family: 'Pontano Sans';font-size: 15px; 
 }
 
 .header{
@@ -216,6 +216,10 @@ cursor: pointer;
  }
 .col-6{
  background-color: aliceblue;
+ }
+ .picshow{
+  width: 100%;
+  height:auto;
  }
  footer {display:flex;
  background-color:grey;}
