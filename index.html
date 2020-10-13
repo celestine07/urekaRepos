@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="ureka.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'>
-        
-        
-              
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <script src="https://kit.fontawesome.com/7201c5c458.js" crossorigin="anonymous"></script>
+   
+                     
 </head>
 <body>
 
@@ -18,7 +19,30 @@
           <div class="header">
               
                 <img src="pics/IMG-20200828-WA0021.jpg" class="urekalogo"  alt="">
-                <h5> we wont watse your watse</h3>
+                <div class="slideshow-container">
+
+<div class="mySlides fade">
+   <img src="Bpics/IMG-20200908-WA0014.jpg" style="width:100%; height: 240px; ">
+</div>
+
+<div class="mySlides fade">
+  <img src="Bpics/IMG-20200901-WA0027.jpg" style="width:100%; height: 240px;">
+</div>
+
+<div class="mySlides fade">
+    <img src="Bpics/IMG-20200901-WA0017.jpg" style="width:100%; height: 240px;">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+                <!--<h5> we won't watse your watse</h3>-->
+
            </div> 
              <div class="topnav" id="myTopnav">
                <a href="index.html" class="active">Ureka Synergy</a>
@@ -28,17 +52,13 @@
                <a href="urekacontact.html">Contact</a>
                 <a href="aboutus.html">About Us</a>
                <a href="javascript:void(0);" class="icon" onclick="myFunctionNav()">
-                 <i class="fa fa-bars"></i>
+                 <i class="fa fa-bars"></i> 
                </a>
              </div>
            <div class="maincontainer2">
              <div class="col-3">
                <div class="addspace1">
-                 <!--<p>drop adds here </br> A United States federal judge has approved a request from a group of WeChat users to delay looming US government restrictions that would effectively make the popular app nearly impossible to use in the country.
-
-                  Magistrate Judge Laurel Beeler said the government's actions would affect users' First Amendment rights as the effective ban on the app removes their platform for communication. 
-                  
-                  WeChat is a messaging focused app popular with many Chinese-speaking Americans that serves as a connector to friends, family, customers and</p>-->
+                 <!--<p>drop adds here </p>-->
                </div>
             </div>
             <div class="col-6">   
@@ -54,12 +74,12 @@
                                  
                <p>
                  <b>Objectives</b></br> 
-                 As a team of youths concerned about making effctive change in the society,</br>
+                 As a team of youths concerned about making effective change in the society,</br>
                  our objectives include:</br>  
                  • To assist in the efforts to achieve cleanliness of the State and world at large</br>
-                 • Encourage residents to imbibe the culture of hygiene </br>
-                 • Reduce the incident of indiscriminate dumping and generating zero waste </br>
-                 • Allow for easy end of plastic waste in our communities.</br>
+                 • To encourage residents to imbibe the culture of hygiene </br>
+                 • To reduce the incident of indiscriminate dumping and generating zero waste </br>
+                 • To allow for easy end of plastic waste in our communities.</br>
                </p>
                   <img src="pics/IMG-20200908-WA0014.jpg" class="picshow">
                   <b>Office of the State Ministry of Science and Technology</b></br>
@@ -68,6 +88,37 @@
                   <img src="pics/IMG-20200824-WA0008.jpg" class="picshow">
                   <b>Meeting with a Member of the Lagos State House of Representatives</b></br>
              </article> 
+               
+
+              <!--progress bar-->  
+                 <div class="row">
+                  <p>ANALYSIS OF PLASTICS COLLECTED AND RECYCLED BY UREKA AGAINST EXTIMATED PLASTIC WASTE IN WESTAFRICA</p>
+     <div class="side">
+       <div>19,200 collected:</div>
+     </div>
+     <div class="middle">
+       <div class="bar-container">
+         <div class="bar-5"></div>
+       </div>
+     </div>
+      <div class="side right">
+       <div>50,000,000</div>
+     </div>
+     <div class="side">
+       <div>18,520 recycled:</div>
+     </div>
+     <div class="middle">
+       <div class="bar-container">
+         <div class="bar-4"></div>
+       </div>
+     </div>
+     <div class="side right">
+       <div>50,000,000</div>
+     </div>
+     <div class="side">
+   </div>
+
+
 
              
                <!-- The four image columns -->
@@ -113,6 +164,29 @@
                   imgText.innerHTML = imgs.alt;
                   expandImg.parentElement.style.display = "block";
                           }
+
+
+                         
+                var slideIndex = 0;
+                showSlides();
+
+           function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+              }
+              slideIndex++;
+             if (slideIndex > slides.length) {slideIndex = 1}    
+             for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+             }
+             slides[slideIndex-1].style.display = "block";  
+             dots[slideIndex-1].className += " active";
+             setTimeout(showSlides, 2000); // Change image every 2 seconds
+              } 
+
              </script>
         
     
@@ -120,13 +194,7 @@
             </div>
             <div class="col-3">
               <div class="addspace2">
-               <!-- <p>drop adds here
-                  A United States federal judge has approved a request from a group of WeChat users to delay looming US government restrictions that would effectively make the popular app nearly impossible to use in the country.
-
-Magistrate Judge Laurel Beeler said the government's actions would affect users' </br>First Amendment rights as the effective ban on the app removes their platform for communication. 
-
-WeChat is a messaging focused app popular with many Chinese-speaking Americans that serves as a connector to friends, family, customers and
-                </p>-->
+               <!-- <p>drop adds here</p>-->
 
               </div>
              </div>
@@ -134,9 +202,10 @@ WeChat is a messaging focused app popular with many Chinese-speaking Americans t
                 
          </div>
           <footer>
-                  <p>About us</p>
-                  <p>contacts</p>
-                  <P>copy right</P>
+                  <a href="aboutus.html">About us</a>
+                  <i class='fas fa-phone-square-alt' style='font-size:15px'><a href="urekacontact.html">contacts</a></i>
+                  <i class='far fa-copyright' style='font-size:15px'>Ureka Synergy 2020</i></P>
+                  <i class='fab fa-facebook-f' style='color:blue;font-size: 15px;'><a href='https://m.facebook.com/Ureka-Ventures-108453060990272/?ref=bookmarks'>facebook</a></i>
          </footer>
     </body>
 </html>

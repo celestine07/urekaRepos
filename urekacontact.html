@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="ureka.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/7201c5c458.js" crossorigin="anonymous"></script>
+   
         
         
               
@@ -18,7 +20,28 @@
           <div class="header">
               
                 <img src="pics/IMG-20200828-WA0021.jpg" class="urekalogo"  alt="">
-                <h5> we wont watse your watse</h3>
+                <div class="slideshow-container">
+
+<div class="mySlides fade">
+   <img src="Bpics/IMG-20200908-WA0014.jpg" style="width:100%; height: 240px; ">
+</div>
+
+<div class="mySlides fade">
+  <img src="Bpics/IMG-20200901-WA0027.jpg" style="width:100%; height: 240px;">
+</div>
+
+<div class="mySlides fade">
+    <img src="Bpics/IMG-20200901-WA0017.jpg" style="width:100%; height: 240px;">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
              </div> 
              <div class="topnav" id="myTopnav">
                <a href="index.html" class="active">Ureka Synergy</a>
@@ -51,6 +74,10 @@
                <p>Or drop us a mail at:</br>
                   info@urekasynergy.com
                </p>
+               <p>
+                 <i class='fab fa-facebook-f' style='color:blue;font-size: 15px;'><a href='https://m.facebook.com/Ureka-Ventures-108453060990272/?ref=bookmarks'>facebook</a></i>
+               </p>
+
              </article> 
 
              
@@ -66,6 +93,27 @@
 
               
                }          
+
+               var slideIndex = 0;
+                showSlides();
+
+           function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+              }
+              slideIndex++;
+             if (slideIndex > slides.length) {slideIndex = 1}    
+             for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+             }
+             slides[slideIndex-1].style.display = "block";  
+             dots[slideIndex-1].className += " active";
+             setTimeout(showSlides, 2000); // Change image every 2 seconds
+              } 
+
              </script>
         
     
@@ -81,9 +129,10 @@
                 
          </div>
           <footer>
-                  <p>About us</p>
-                  <p>contacts</p>
-                  <P>copy right</P>
+                  <a href="aboutus.html">About us</a>
+                  <i class='fas fa-phone-square-alt' style='font-size:15px'><a href="urekacontact.html">contacts</a></i>
+                  <i class='far fa-copyright' style='font-size:15px'>Ureka Synergy 2020</i></P>
+                  <i class='fab fa-facebook-f' style='color:blue;font-size: 15px;'><a href='https://m.facebook.com/Ureka-Ventures-108453060990272/?ref=bookmarks'>facebook</a></i>
                 </footer>
     </body>
 </html>
